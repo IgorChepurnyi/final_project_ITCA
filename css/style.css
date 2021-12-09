@@ -1,0 +1,223 @@
+.preheader {
+    height: 44px;
+    background-color: black;
+    display: flex;
+}
+.menu {
+    height: 84px;
+    background-color: #ffffff;
+    display: flex;
+}
+.under_menu {
+    height: 34px;
+    background-color: #17696A;
+    display: flex;
+}
+.header_select_catalogue {
+    min-height: 500px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+}
+.header_image_select {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .header_image_select_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -80px;
+        z-index: 1;
+        height: inherit;
+    }
+    @media screen and (max-width: 600px) {
+        .header_select_catalogue {
+            min-height:min-content;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: flex-start;
+        
+        }
+        .header_image_select {
+            display: flex;
+            width:fit-content;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 0px;
+        }
+        .header_image_select_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+        }
+    }
+
+.header_image_select_box img{
+    display: flex; 
+    margin: 10px;
+    height: inherit;
+    width: 390px;
+}
+.header_image_select_box h3{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 20px;
+    color: #424551;
+}
+.clothers_box{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+}
+.carous_image{
+    display: flex;
+flex-direction: row;
+height: auto;
+justify-content: center;
+}
+.add_param{
+    display: flex;
+    height: 400px;
+}
+#c1.clothers_img{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background: url(../img/image_sale1.png);
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    padding: 8px;
+}
+#c2.clothers_img{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background: url(../img/image_sale2.png);
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    padding: 8px;
+}
+#c3.clothers_img{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background: url(../img/image_sale3.png);
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    padding: 8px;
+}
+#c4.clothers_img{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background: url(../img/image_sale4.png);
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    padding: 8px;
+}
+#c5.clothers_img{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background: url(../img/image_sale5.png);
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    padding: 8px;
+}
+#c6.clothers_img{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background: url(../img/image_sale6.png);
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    padding: 8px;
+}
+.indicators_margin{
+    bottom: -96px;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #B3B7BC;
+}
+#demo1 .active{
+    display: none;
+}
+.clothers_img img:last-child:hover{
+    opacity: 2;
+}
+.clothers_img img:last-child{
+    opacity: 0.4;
+}
+.clothers_name{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.clothers_price{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.clothers_name p{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: #424551;
+}
+.clothers_price p{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1E212C;
+}
+.new_arrivals h2{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 46px;
+    color: #1E212C;  
+    align-self: center;
+}
+.new_arrivals p{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1E212C;  
+    align-self: center;
+    margin: 0;
+}
+.new_arrivals a{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: #406851;  
+    align-self: center;
+}
+.new_arrivals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
