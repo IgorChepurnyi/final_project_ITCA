@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -13,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Lato:wght@700&display=swap" rel="stylesheet">
+<script src="script/jquery-3.6.0.js"></script>
   </head>
   <body>
     <div class="section">
@@ -132,13 +132,11 @@
                           <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
                           <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
                           <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
-                          <button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
-                          <button type="button" data-bs-target="#demo1" data-bs-slide-to="4"></button>
                         </div>
                       
                         <!-- The slideshow/carousel -->
                         <div class="carousel-inner add_param">
-                          <div class="carousel-item carous_image active">
+                          <div class="carousel-item carous_image">
                             <div class="clothers_box">
                                 <div class="clothers_img" id="c2">
                                     <img src="img/rating.png" alt="">
@@ -219,7 +217,7 @@
         
                             </div>
                           </div>
-                          <div class="carousel-item carous_image">
+                          <div class="carousel-item carous_image active">
                             <div class="clothers_box">
                                 <div class="clothers_img" id="c6">
                                     <img src="img/rating.png" alt="">
@@ -322,7 +320,7 @@
                                     <p>Red dangle earrings</p>
                                 </div>
                                 <div class="clothers_price">
-                                    <p>29.95</p>
+                                    <p>$29.95</p>
                                 </div>
         
                             </div>
@@ -380,38 +378,374 @@
                             </div>
                           </div>
                         </div>
-                      
-                        <!-- Left and right controls/icons -->
-<!--                         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </button> -->
                       </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 </div>    
-
-
-<!--     <div class="container">
+<div class="section">
         <div class="row">
             <div class="col-12">
-                <div class="preheader">
-
+                <div class="promotion_widget">
+                    <div class="row mx-n2 widget_1">
+                        <div class="col-lg-5 px-2 mb-3 ">
+                            <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded py-5 px-md-5 px-4 background_widget" style="background-image: url(../final_project/img/image_widget1.png);">
+                                <div class="mt-md-3 mb-md-6 pb-6 px-md-2">
+                                    <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Summer Collections</h3>
+                                    <h2 class="pb-3">Sale Up to 70%</h2>
+                                    <a href="#" class="btn btn-outline-primary">Explore new prices</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 px-2 mb-3">
+                            <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded py-5 px-md-5 px-4 background_widget"
+                                style="background-image: url(../final_project/img/image_widget2.png);">
+                                <div class="mt-md-3 mb-md-5 pb-5 px-md-2" style="max-width: 22rem;">
+                                    <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Deal of the Week</h3>
+                                    <h2 class="pb-3">Stay Warm With Our New Sweaters</h2>
+                                    <a href="#" class="btn btn-outline-primary">Shop now</a>
+                                </div>
+                                <div class="mb-md-3 px-md-2">
+                                    <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Limited time offer</h3>
+                                    <div class="cs-countdown h3 mb-0" data-countdown="10/01/2022 07:00:00 PM">
+                                        <div class="cs-countdown-days mb-0">
+                                            <span class="cs-countdown-value">294</span>
+                                            <span class="cs-countdown-label mt-1 font-size-sm text-body">Days</span>
+                                        </div>
+                                        <div class="cs-countdown-hours mb-0">
+                                            <span class="cs-countdown-value">18</span>
+                                            <span class="cs-countdown-label mt-1 font-size-sm text-body">Hours</span>
+                                        </div>
+                                        <div class="cs-countdown-minutes mb-0">
+                                            <span class="cs-countdown-value">27</span>
+                                            <span class="cs-countdown-label mt-1 font-size-sm text-body">Mins</span>
+                                        </div>
+                                        <div class="cs-countdown-seconds mb-0">
+                                            <span class="cs-countdown-value">38</span>
+                                            <span class="cs-countdown-label mt-1 font-size-sm text-body">Secs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-n2 widget_1">
+                        <div class="col-lg-7 px-2 mb-3">
+                            <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded py-5 px-md-5 px-4 background_widget"
+                                style="background-image: url(../final_project/img/image_widget3.png);">
+                                <div class="mt-md-3 mb-md-5 pb-5 px-md-2" style="max-width: 22rem;">
+                                    <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Deal of the Week</h3>
+                                    <h2 class="pb-3">Stay Warm With Our New Sweaters</h2>
+                                    <a href="#" class="btn btn-outline-primary">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-2 mb-3 ">
+                            <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded pt-5 pb-md-5 px-md-5 px-4 background_widget_email" style="background-image: url(../final_project/img/image_widget4.png);">
+                                <div class="mt-md-3 mb-md-5 pb-6 px-md-2" style="max-width: 26rem;">
+                                    <h3 class="mb-2 pb-1 font-size-sm text-uppercase">For All New Email Subscribers</h3>
+                                    <h2 class="pb-2">Get 5% Off &amp; Free Delivery</h2>
+                                    <form class="form-group needs-validation" novalidate="">
+                                        <label for="sub-email">Email</label>
+                                        <div class="input-group" style="max-width: 23rem;">
+                                            <input type="email" id="sub-email" class="form-control" placeholder="Your email address" required="">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="font-size-sm" style="max-width: 23rem;">*Sign up to be the first to hear about exclusive deals, special
+                                        offers and upcoming collections.</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+</div>
+
+<div class="section">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="widget_popular">
+                <h2>Popular categories</h2>
+                <div class="widget_popular_wrapper">
+                    <div class="widget_popular_select_box">
+                        <div class=img_widget_popular_select>
+                            <img src="img/image_popular_round1.png" alt="#">
+                        </div>
+                        <div class=h3_header_image_select>
+                            <h3>Tops</h3>
+                        </div>
+                    </div>
+                    <div class="widget_popular_select_box">
+                        <div class=img_widget_popular_select>
+                            <img src="img/image_popular_round2.png" alt="#">
+                        </div>
+                        <div class=h3_header_image_select>
+                            <h3>T-shirts</h3>
+                        </div>
+                    </div>
+                    <div class="widget_popular_select_box">
+                        <div class=img_widget_popular_select>
+                            <img src="img/image_popular_round3.png" alt="#">
+                        </div>
+                        <div class=h3_header_image_select>
+                            <h3>Caps</h3>
+                        </div>
+                    </div>
+                    <div class="widget_popular_select_box">
+                        <div class=img_widget_popular_select>
+                            <img src="img/image_popular_round4.png" alt="#">
+                        </div>
+                        <div class=h3_header_image_select>
+                            <h3>Sandals</h3>
+                        </div>
+                    </div>
+                    <div class="widget_popular_select_box">
+                        <div class=img_widget_popular_select>
+                            <img src="img/image_popular_round5.png" alt="#">
+                        </div>
+                        <div class=h3_header_image_select>
+                            <h3>Jackets</h3>
+                        </div>
+                    </div>
+                    <div class="widget_popular_select_box">
+                        <div class=img_widget_popular_select>
+                            <img src="img/image_popular_round6.png" alt="#">
+                        </div>
+                        <div class=h3_header_image_select>
+                            <h3>Coats</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section">
+    <div class="row">
+        <div class="col-12">
+            <div class="widget_trending">
+                <div class="navigat_trending">
+                    <h2>Trending now</h2>
+                    <div class="button_nav">
+                        <button id="myBtn" >&#8592</button>
+                        <button id="myBtn1">&#8594</button>
+                    </div>
+                </div>
+                
+                <div class="new_arrivals_widget">
+                    <div id="demo2" class="carousel slide">
+                     
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner add_param">
+                          <div class="carousel-item carous_image">
+                            <div class="clothers_box">
+                                <div class="clothers_img" id="c1">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+        
+                                </div>
+                                <div class="clothers_name">
+                                   <p>Metal bridge sunglasses</p> 
+                                </div>
+                                <div class="clothers_price">
+                                    <p>$89.95</p>
+                                </div>
+        
+                            </div>
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c2">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Black and white sport cap</p>
+                                </div>
+                                <div class="clothers_price">
+                                    <p>$15.15</p> 
+                                </div>
+        
+                            </div>
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c3">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Green baby romper</p>
+                                </div>
+                                <div class="clothers_price">
+                                     <p>$20.40</p>   
+                                </div>
+        
+                            </div>
+                          </div>
+                          <div class="carousel-item carous_image active">
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c2">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Baby shoes with laces</p>
+                                </div>
+                                <div class="clothers_price">
+                                        <p>$30.60</p>
+                                </div>
+        
+                            </div>
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c3">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Red dangle earrings</p>
+                                </div>
+                                <div class="clothers_price">
+                                    <p>29.95</p>
+                                </div>
+        
+                            </div>
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c4">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Mid-rise slim cropped fit jeans</p>
+                                </div>
+                                <div class="clothers_price">
+                                        <p>$40.00</p>
+                                </div>
+        
+                            </div>
+                          </div>
+                          <div class="carousel-item carous_image">
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c3">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Mid-rise slim cropped fit jeans</p>
+                                </div>
+                                <div class="clothers_price">
+                                        <p>$40.00</p>
+                                </div>
+        
+                            </div>
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img" id="c4">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Red dangle earrings</p>
+                                </div>
+                                <div class="clothers_price">
+                                    <p>$29.95</p>
+                                </div>
+        
+                            </div>
+                            <div class="clothers_box trending_widget">
+                                <div class="clothers_img"id="c5">
+                                    <img src="img/rating.png" alt="">
+                                    <img src="img/wishlist.png" alt="">
+                                </div>
+                                <div class="clothers_name">
+                                    <p>Metal bridge sunglasses</p> 
+                                </div>
+                                <div class="clothers_price">
+                                    <p>$89.95</p>
+                                </div>
+        
+                            </div>
+                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                              </button>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../final_project/script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
