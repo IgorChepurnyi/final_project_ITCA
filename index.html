@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>E-Commerce</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,63 @@
 </head>
 
 <body>
-    <div class="section">
+    <div class="section footer_color">
+        <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="preheader">
-
+                <div class="header">
+                        <div class="topbar">
+                            <div class="topbar_cont_tel">
+                                <span> Available 24/7 at </span><a href="tel:+(405) 555-0128"> (405)555-0128</a>
+                            </div>
+                        </div>
+                        <div class="link_nav_topbar">
+                            <ul class="link_nav_topbar_list">
+                                <a href="">
+                                    <li>Delivery & returns</li>
+                                </a>
+                                <a href="">
+                                    <li>Track order</li>
+                                </a>                                
+                                <a href="">
+                                    <li>Blog</li>
+                                </a>
+                                <a href="">
+                                    <li>Contacts</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="topbar_lang_login_box">
+                            <div class="dropbox_language_select">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle btn_language" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img\en.png" class="mr-2" width="20" alt="English">
+                                        Eng / $</a></li>
+                                    </a>
+                                  
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">                        
+                                        <img src="img\en.png" class="mr-2" width="20" alt="English">
+                                        Eng / $</a></li>
+                                      <li><a class="dropdown-item" href="#">                       
+                                     <img src="img\fr.png" class="mr-2" width="20" alt="Français">
+                                        Français / €                                          
+                                      </a></li>
+                                      <li><a class="dropdown-item" href="#">                        
+                                        <img src="img\de.png" class="mr-2" width="20" alt="Deutsch">
+                                        Deutsch / €</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="login_topbar">
+                                <img src="img\Person.png"alt="person" style="margin-right: 5px;">
+                                <a href="#login">Log in / register</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="section">
         <div class="row">
@@ -42,17 +91,17 @@
                           </div>
                           <!-- Toolbar -->
                           <div class="d-flex align-items-center order-lg-3">
-                            <ul class="nav nav-tools flex-nowrap">
+                            <ul class="nav nav-tools flex-nowrap cart_wish">
                               <li class="nav-item d-lg-block d-none mb-0">
                                 <a href="account-wishlist.html" class="nav-tool">
-                                  <i class="ci-heart nav-tool-icon"></i>
+                                    <img src="img\heart.png" alt="heart">
                                   <span class="nav-tool-label">2</span>
                                 </a>
                               </li>
                               <li class="divider-vertical mb-0 d-lg-block d-none"></li>
                               <li class="nav-item align-self-center mb-0">
                                 <a href="#" class="nav-tool pe-lg-0" data-bs-toggle="offcanvas" data-bs-target="#cart">
-                                  <i class="ci-cart nav-tool-icon"></i>
+                                  <img src="img\Cart.png" alt="heart">
                                   <span class="badge bg-success align-middle mt-n1 ms-2 px-2 py-1 fs-xs">4</span>
                                 </a>
                               </li>
@@ -196,7 +245,36 @@
         <div class="row">
             <div class="col-12">
                 <div class="under_menu">
-
+                    <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner green_carousel">
+                          <div class="carousel-item active">
+                            <div class="fs-xs text-light px-2 tns-item tns-normal" id="tns1-item0" aria-hidden="true" tabindex="-1">
+                                <strong class="me-1">Up to 70% Off.</strong>
+                                <a href="#" class="text-light">Shop our latest sale offers</a>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="fs-xs text-light px-2 tns-item tns-normal" id="tns1-item1" aria-hidden="true" tabindex="-1">
+                                <strong class="me-1">Money back guarantee.</strong>
+                                <a href="#" class="text-light">Learn more</a>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="fs-xs text-light px-2 tns-item tns-slide-active tns-fadeIn" id="tns1-item2" >
+                                <strong class="me-1">Friendly customer support.</strong>
+                                <a href="#" class="text-light">Contact 24/7</a>
+                              </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev button_undermenu_prev_position" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon button_undermenu_prev" aria-hidden="true"></span>
+                          <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next button_undermenu_next_position" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon  button_undermenu_next" aria-hidden="true"></span>
+                          <span class="visually-hidden">Следующий</span>
+                        </button>
+                      </div>
                 </div>
             </div>
         </div>
@@ -596,7 +674,7 @@
                     <div class="row mx-n2 widget_1">
                         <div class="col-lg-5 px-2 mb-3 ">
                             <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded py-5 px-md-5 px-4 background_widget"
-                                style="background-image: url(../final_project/img/image_widget1.png);">
+                                style="background-image: url(img/image_widget1.png);">
                                 <div class="mt-md-3 mb-md-6 pb-6 px-md-2">
                                     <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Summer Collections</h3>
                                     <h2 class="pb-3">Sale Up to 70%</h2>
@@ -606,7 +684,7 @@
                         </div>
                         <div class="col-lg-7 px-2 mb-3">
                             <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded py-5 px-md-5 px-4 background_widget"
-                                style="background-image: url(../final_project/img/image_widget2.png);">
+                                style="background-image: url(img/image_widget2.png);">
                                 <div class="mt-md-3 mb-md-5 pb-5 px-md-2" style="max-width: 22rem;">
                                     <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Deal of the Week</h3>
                                     <h2 class="pb-3">Stay Warm With Our New Sweaters</h2>
@@ -615,20 +693,20 @@
                                 <div class="mb-md-3 px-md-2">
                                     <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Limited time offer</h3>
                                     <div class="cs-countdown h3 mb-0" data-countdown="10/01/2022 07:00:00 PM">
-                                        <div class="cs-countdown-days mb-0">
+                                        <div class="cs-countdown-days mb-0 t">
                                             <span class="cs-countdown-value">294</span>
                                             <span class="cs-countdown-label mt-1 font-size-sm text-body">Days</span>
                                         </div>
-                                        <div class="cs-countdown-hours mb-0">
-                                            <span class="cs-countdown-value">18</span>
+                                        <div class="cs-countdown-hours mb-0 t">
+                                            <span class="cs-countdown-value" id="hour"></span>
                                             <span class="cs-countdown-label mt-1 font-size-sm text-body">Hours</span>
                                         </div>
-                                        <div class="cs-countdown-minutes mb-0">
-                                            <span class="cs-countdown-value">27</span>
+                                        <div class="cs-countdown-minutes mb-0 t">
+                                            <span class="cs-countdown-value" id="min"></span>
                                             <span class="cs-countdown-label mt-1 font-size-sm text-body">Mins</span>
                                         </div>
-                                        <div class="cs-countdown-seconds mb-0">
-                                            <span class="cs-countdown-value">38</span>
+                                        <div class="cs-countdown-seconds mb-0 t">
+                                            <span class="cs-countdown-value" id="sec"></span>
                                             <span class="cs-countdown-label mt-1 font-size-sm text-body">Secs</span>
                                         </div>
                                     </div>
@@ -639,7 +717,7 @@
                     <div class="row mx-n2 widget_1">
                         <div class="col-lg-7 px-2 mb-3">
                             <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded py-5 px-md-5 px-4 background_widget"
-                                style="background-image: url(../final_project/img/image_widget3.png);">
+                                style="background-image: url(img/image_widget3.png);">
                                 <div class="mt-md-3 mb-md-5 pb-5 px-md-2" style="max-width: 22rem;">
                                     <h3 class="mb-2 pb-1 font-size-sm text-uppercase">Deal of the Week</h3>
                                     <h2 class="pb-3">Stay Warm With Our New Sweaters</h2>
@@ -649,7 +727,7 @@
                         </div>
                         <div class="col-lg-5 px-2 mb-3 ">
                             <div class="d-flex flex-column h-100 bg-size-cover bg-position-center-y rounded pt-5 pb-md-5 px-md-5 px-4 background_widget_email"
-                                style="background-image: url(../final_project/img/image_widget4.png);">
+                                style="background-image: url(img/image_widget4.png);">
                                 <div class="mt-md-3 mb-md-5 pb-6 px-md-2" style="max-width: 26rem;">
                                     <h3 class="mb-2 pb-1 font-size-sm text-uppercase">For All New Email Subscribers</h3>
                                     <h2 class="pb-2">Get 5% Off &amp; Free Delivery</h2>
@@ -674,7 +752,6 @@
             </div>
         </div>
     </div>
-
     <div class="section">
         <div class="container">
             <div class="row">
@@ -736,43 +813,14 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="section">
         <div class="row">
             <div class="col-12">
                 <div class="widget_trending">
                     <div class="navigat_trending">
                         <h2>Trending now</h2>
-                        <!--                     <div class="button_nav">
-                        <button id="myBtn" >&#8592</button>
-                        <button id="myBtn1">&#8594</button>
-                    </div> -->
                     </div>
                     <div id="demo2" class="carousel slide">
-
                         <!-- The slideshow/carousel -->
                         <div class="carousel-inner add_param add_param_new_arr">
                             <div class="carousel-item carous_image ">
@@ -896,7 +944,6 @@
                                     <div class="clothers_price trending_color">
                                         <p>$89.95</p>
                                     </div>
-
                                 </div>
                             </div>
                             <button class="carousel-control-prev button_rule_position_left" type="button"
@@ -923,7 +970,6 @@
                         <h2>Sale up to 70%</h2>
                     </div>
                     <div id="demo3" class="carousel slide">
-
                         <!-- The slideshow/carousel -->
                         <div class="carousel-inner add_param add_param_new_arr">
                             <div class="carousel-item carous_image ">
@@ -1353,12 +1399,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
         </div>
@@ -1371,52 +1411,22 @@
                         <p>© All rights reserved. Made with <img src="img/outline.png" alt=""> by Createx Studio </p>
                         <a href="#">Go Top</a>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="but_back_top">
         <!-- Back to top button -->
         <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
             <i class="fas fa-arrow-up"></i>
         </button>
-
     </div>
-
-
-
-
-
     <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="../final_project/script/script.js"></script>
+    <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

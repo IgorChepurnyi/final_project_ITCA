@@ -23,3 +23,17 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+document.addEventListener("DOMContentLoaded", midNight(), true)
+function midNight() {
+    let counterHour = document.getElementById("hour");
+    let counterMin = document.getElementById("min");
+    let counterSec = document.getElementById("sec");
+    const dataNight = new Date();
+    let h = dataNight.getHours();
+    let m = dataNight.getMinutes();
+    let s = dataNight.getSeconds();
+    counterHour.innerHTML = (23-h);
+    counterMin.innerHTML = (59-m);
+    counterSec.innerHTML = (60-s);
+    setInterval("midNight()", 1000);
+}

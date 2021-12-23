@@ -1,7 +1,109 @@
-.preheader {
+.header {
     height: 44px;
-    background-color: black;
+    background-color:#1E212C;;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar{
+    display: flex;
+    flex-direction: row;
+}
+.link_nav_topbar{
+    min-width: 364px;
+    align-self: center;
+}
+.link_nav_topbar_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.dropbox_language_select{
+    align-self: center;
+}
+.link_nav_topbar_list li{
+    list-style-type: none;     
+    display: flex; 
+    font-family: Lato;
+    font-weight: 400;
+    font-size:  14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.cs-countdown{
+    display: flex;
+    flex-direction: row;
+}
+.cart_wish a{
+    text-decoration: none;
+}
+.divider-vertical{
+           display: block;
+        width: 0.0625rem;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 10%, #dadbdd 45%, #dadbdd 55%, rgba(218, 219, 221, 0.5) 90%, rgba(218, 219, 221, 0) 100%);
+        content: "";
+
+}
+.t{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.link_nav_topbar_list a{
+    text-decoration: none;
+}
+.link_nav_topbar_list li:hover{
+    font-weight: 900;
+    color: #17696a;
+}
+.topbar_cont_tel span{
+    list-style-type: none;     
+    display: flex; 
+    font-family: Lato;
+    font-weight: 400;
+    font-size:  14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.topbar_cont_tel a{ 
+    display: flex; 
+    font-family: Lato;
+    font-weight: 900;
+    font-size:  14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login_topbar a{
+    display: flex; 
+    font-family: Lato;
+    font-weight: 900;
+    font-size:  14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login_topbar{
+    display: flex;
+align-items: center;
+}
+.topbar_cont_tel{ 
+    display: flex;
+align-self: center;
+}
+.btn_language{
+    background-color: #1E212C;
+    border: none;
+    height: min-content;
+}
+.btn_language:hover{
+    background-color: #1E212C;
+    border: none;
+    height: min-content;
+}
+.topbar_lang_login_box{
+    display: flex;
+    flex-direction: row;
 }
 .menu {
     height: 84px;
@@ -66,22 +168,44 @@
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
+.green_carousel{
+width: 500px;
+padding-left: 100px;
+}
+.button_undermenu_next_position{
+    left: 475px;
+}
+.button_undermenu_prev_position{
+    right: 475px;
+    left: auto;
+}
+.nav-tool-label{
+    margin-right: 10px;
+    margin-left: 10px;  
+    color: #424551;
+}
 
 
 
 
 
-
-
-
-
-
+.button_undermenu_next{
+height: 1.5rem;
+width: 2rem;
+opacity: 1;
+}
+.button_undermenu_prev{
+    height: 1.5rem;
+    width: 2rem;
+    opacity: 1;
+    }
+    
 
 .under_menu {
     height: 34px;
     background-color: #17696A;
-    display
-    : flex;
+    display: flex;
+    justify-content: center;
 }
 .carind_position_change{
     top:430px;
@@ -338,7 +462,7 @@ justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
     height: 500px;
-    margin-top: 65px;
+    margin-top: 5px;
     padding-top: 20px;
 }
 .background_widget_email{
@@ -456,6 +580,7 @@ min-width: 1230px;
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: #E5E8ED;
+    overflow-x: hidden;
 }
 .button_rule_position_right{
     background-color: #216a17;
@@ -534,6 +659,7 @@ min-width: 1230px;
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 #demo3 .clothers_img.new_arriv{
     height:440px;
